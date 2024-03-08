@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">XYZ Bank Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\91630\eclipse-workspace\XYZBank\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-XYZ_Bank_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" class="hide-methods failed suite-XYZ_Bank_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-XYZ_Bank_Test_Suite -->
+                      <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" class="show-methods failed suite-XYZ_Bank_Test_Suite"> (show)</a> <!-- show-methods failed suite-XYZ_Bank_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-XYZ_Bank_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.InvalidAddCustomerTestCase" class="method navigator-link" hash-for-method="validateAddCustomer">validateAddCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.InvalidDepositTestCase" class="method navigator-link" hash-for-method="validateDeposit">validateDeposit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.InvalidWithdrawalTestCase" class="method navigator-link" hash-for-method="validateDeposit">validateDeposit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-XYZ_Bank_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" class="hide-methods passed suite-XYZ_Bank_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-XYZ_Bank_Test_Suite -->
+                      <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" class="show-methods passed suite-XYZ_Bank_Test_Suite"> (show)</a> <!-- show-methods passed suite-XYZ_Bank_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-XYZ_Bank_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.ValidAddCustomerTestCase" class="method navigator-link" hash-for-method="validateAddCustomer">validateAddCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.CustomerLoginTestCase" class="method navigator-link" hash-for-method="validateCustomerAcc">validateCustomerAcc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.CustomersPageTestCase" class="method navigator-link" hash-for-method="validateCustomerDetails">validateCustomerDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.ValidDepositTestCase" class="method navigator-link" hash-for-method="validateDeposit">validateDeposit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.ValidOpenAccTestCase" class="method navigator-link" hash-for-method="validateOpenCustomer">validateOpenCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.ValidWithdrawalTestCase" class="method navigator-link" hash-for-method="validateWithdrawl">validateWithdrawl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyBankManagerLoginTest">verifyBankManagerLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyCustomerLoginTest">verifyCustomerLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.InvalidWithdrawalTestCase" class="method navigator-link" hash-for-method="verifyDepositRecord">verifyDepositRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.ValidDepositTestCase" class="method navigator-link" hash-for-method="verifyDepositRecord">verifyDepositRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.InvalidDepositTestCase" class="method navigator-link" hash-for-method="verifyDepositRecord">verifyDepositRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.TransactionTestCase" class="method navigator-link" hash-for-method="verifyRecords">verifyRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.TransactionTestCase" class="method navigator-link" hash-for-method="verifyTransactions">verifyTransactions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Test_Suite" title="com.qa.xyz.testcases.ValidWithdrawalTestCase" class="method navigator-link" hash-for-method="verifyWithdrawlRecord">verifyWithdrawlRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-XYZ_Bank_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-XYZ_Bank_Test_Suite" class="panel XYZ_Bank_Test_Suite">
+          <div class="suite-XYZ_Bank_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.InvalidDepositTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeposit">
+                  </a> <!-- validateDeposit -->
+                  <span class="method-name">validateDeposit</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Deposit Successful&apos;)]&quot;}
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-M2DVE1SL&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\91630\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37dfcd9990516f78e488137c32e89308
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Deposit Successful&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at com.qa.xyz.pages.DepositPage.success(DepositPage.java:49)
+	at com.qa.xyz.testcases.InvalidDepositTestCase.validateDeposit(InvalidDepositTestCase.java:42)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-failed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.InvalidAddCustomerTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddCustomer">
+                  </a> <!-- validateAddCustomer -->
+                  <span class="method-name">validateAddCustomer</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.qa.xyz.testcases.InvalidAddCustomerTestCase.validateAddCustomer(InvalidAddCustomerTestCase.java:42)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-failed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.InvalidWithdrawalTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeposit">
+                  </a> <!-- validateDeposit -->
+                  <span class="method-name">validateDeposit</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Transaction successful&apos;)]&quot;}
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-M2DVE1SL&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\91630\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd39bef0f68306c7808b958558e24c0b
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Transaction successful&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at com.qa.xyz.pages.withdrawalPage.successWithdraw(withdrawalPage.java:62)
+	at com.qa.xyz.testcases.InvalidWithdrawalTestCase.validateDeposit(InvalidWithdrawalTestCase.java:43)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-failed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.ValidWithdrawalTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWithdrawl">
+                  </a> <!-- validateWithdrawl -->
+                  <span class="method-name">validateWithdrawl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWithdrawlRecord">
+                  </a> <!-- verifyWithdrawlRecord -->
+                  <span class="method-name">verifyWithdrawlRecord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.HomePageTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBankManagerLoginTest">
+                  </a> <!-- verifyBankManagerLoginTest -->
+                  <span class="method-name">verifyBankManagerLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCustomerLoginTest">
+                  </a> <!-- verifyCustomerLoginTest -->
+                  <span class="method-name">verifyCustomerLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.CustomerLoginTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCustomerAcc">
+                  </a> <!-- validateCustomerAcc -->
+                  <span class="method-name">validateCustomerAcc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.CustomersPageTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCustomerDetails">
+                  </a> <!-- validateCustomerDetails -->
+                  <span class="method-name">validateCustomerDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.ValidOpenAccTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateOpenCustomer">
+                  </a> <!-- validateOpenCustomer -->
+                  <span class="method-name">validateOpenCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.InvalidDepositTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDepositRecord">
+                  </a> <!-- verifyDepositRecord -->
+                  <span class="method-name">verifyDepositRecord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.ValidDepositTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDeposit">
+                  </a> <!-- validateDeposit -->
+                  <span class="method-name">validateDeposit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDepositRecord">
+                  </a> <!-- verifyDepositRecord -->
+                  <span class="method-name">verifyDepositRecord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.TransactionTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRecords">
+                  </a> <!-- verifyRecords -->
+                  <span class="method-name">verifyRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTransactions">
+                  </a> <!-- verifyTransactions -->
+                  <span class="method-name">verifyTransactions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.ValidAddCustomerTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddCustomer">
+                  </a> <!-- validateAddCustomer -->
+                  <span class="method-name">validateAddCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+          <div class="suite-XYZ_Bank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.xyz.testcases.InvalidWithdrawalTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDepositRecord">
+                  </a> <!-- verifyDepositRecord -->
+                  <span class="method-name">verifyDepositRecord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Test_Suite-class-passed -->
+        </div> <!-- panel XYZ_Bank_Test_Suite -->
+        <div panel-name="test-xml-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\91630\eclipse-workspace\XYZBank\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;XYZ Bank Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test name=&quot;XYZ Bank Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.ValidAddCustomerTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.CustomersPageTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.HomePageTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.ValidOpenAccTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.CustomerLoginTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.TransactionTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.InvalidDepositTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.ValidDepositTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.InvalidAddCustomerTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.InvalidWithdrawalTestCase&quot;/&gt;
+      &lt;class name=&quot;com.qa.xyz.testcases.ValidWithdrawalTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- XYZ Bank Test --&gt;
+&lt;/suite&gt; &lt;!-- XYZ Bank Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for XYZ Bank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">XYZ Bank Test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for XYZ Bank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for XYZ Bank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_XYZ_Bank_Test_Suite');
+function tableData_XYZ_Bank_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateDeposit')
+data.setCell(0, 2, 'com.qa.xyz.testcases.InvalidWithdrawalTestCase')
+data.setCell(0, 3, 30968);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateDeposit')
+data.setCell(1, 2, 'com.qa.xyz.testcases.InvalidDepositTestCase')
+data.setCell(1, 3, 30838);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyBankManagerLoginTest')
+data.setCell(2, 2, 'com.qa.xyz.testcases.HomePageTestCase')
+data.setCell(2, 3, 2278);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateOpenCustomer')
+data.setCell(3, 2, 'com.qa.xyz.testcases.ValidOpenAccTestCase')
+data.setCell(3, 3, 1551);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCustomerLoginTest')
+data.setCell(4, 2, 'com.qa.xyz.testcases.HomePageTestCase')
+data.setCell(4, 3, 1301);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateAddCustomer')
+data.setCell(5, 2, 'com.qa.xyz.testcases.InvalidAddCustomerTestCase')
+data.setCell(5, 3, 947);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyDepositRecord')
+data.setCell(6, 2, 'com.qa.xyz.testcases.InvalidWithdrawalTestCase')
+data.setCell(6, 3, 775);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateAddCustomer')
+data.setCell(7, 2, 'com.qa.xyz.testcases.ValidAddCustomerTestCase')
+data.setCell(7, 3, 768);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateWithdrawl')
+data.setCell(8, 2, 'com.qa.xyz.testcases.ValidWithdrawalTestCase')
+data.setCell(8, 3, 644);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyWithdrawlRecord')
+data.setCell(9, 2, 'com.qa.xyz.testcases.ValidWithdrawalTestCase')
+data.setCell(9, 3, 636);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateDeposit')
+data.setCell(10, 2, 'com.qa.xyz.testcases.ValidDepositTestCase')
+data.setCell(10, 3, 632);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDepositRecord')
+data.setCell(11, 2, 'com.qa.xyz.testcases.InvalidDepositTestCase')
+data.setCell(11, 3, 627);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateCustomerDetails')
+data.setCell(12, 2, 'com.qa.xyz.testcases.CustomersPageTestCase')
+data.setCell(12, 3, 617);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyDepositRecord')
+data.setCell(13, 2, 'com.qa.xyz.testcases.ValidDepositTestCase')
+data.setCell(13, 3, 607);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyRecords')
+data.setCell(14, 2, 'com.qa.xyz.testcases.TransactionTestCase')
+data.setCell(14, 3, 555);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyTransactions')
+data.setCell(15, 2, 'com.qa.xyz.testcases.TransactionTestCase')
+data.setCell(15, 3, 516);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateCustomerAcc')
+data.setCell(16, 2, 'com.qa.xyz.testcases.CustomerLoginTestCase')
+data.setCell(16, 3, 112);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyHomePageTitle')
+data.setCell(17, 2, 'com.qa.xyz.testcases.HomePageTestCase')
+data.setCell(17, 3, 11);
+window.suiteTableData['XYZ_Bank_Test_Suite']= { tableData: data, tableDiv: 'times-div-XYZ_Bank_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-XYZ_Bank_Test_Suite">
+              </div> <!-- times-div-XYZ_Bank_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for XYZ Bank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-XYZ_Bank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.CustomersPageTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCustomerDetails</span>
+                <span class="method-start">20957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21576 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.CustomerLoginTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">22162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCustomerAcc</span>
+                <span class="method-start">35026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35139 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.InvalidAddCustomerTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">35399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAddCustomer</span>
+                <span class="method-start">43614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44577 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.ValidAddCustomerTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddCustomer</span>
+                <span class="method-start">51191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">51961 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.HomePageTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">52164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">56180 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56192 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.TransactionTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTransactions</span>
+                <span class="method-start">63188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63705 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.InvalidWithdrawalTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">63893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateDeposit</span>
+                <span class="method-start">70972 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101943 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.InvalidDepositTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">102230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateDeposit</span>
+                <span class="method-start">113615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">144454 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.ValidWithdrawalTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">144719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWithdrawl</span>
+                <span class="method-start">152034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">152679 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.ValidDepositTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">152911 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDeposit</span>
+                <span class="method-start">160112 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">160745 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.ValidOpenAccTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">160988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateOpenCustomer</span>
+                <span class="method-start">166513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">168065 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.HomePageTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">168309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCustomerLoginTest</span>
+                <span class="method-start">171915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">173217 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.TransactionTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">173362 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRecords</span>
+                <span class="method-start">180378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">180934 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.InvalidWithdrawalTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">181149 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDepositRecord</span>
+                <span class="method-start">188849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">189625 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.InvalidDepositTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">189842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDepositRecord</span>
+                <span class="method-start">197534 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">198162 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.ValidWithdrawalTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">198399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWithdrawlRecord</span>
+                <span class="method-start">204997 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">205634 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.ValidDepositTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">206074 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDepositRecord</span>
+                <span class="method-start">214240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">214848 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.xyz.testcases.HomePageTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">215131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBankManagerLoginTest</span>
+                <span class="method-start">220990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">223269 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

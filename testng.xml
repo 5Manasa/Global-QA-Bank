@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XYZ Bank Test Suite">
+  <test name="XYZ Bank Test">
+    <classes>
+      <class name="com.qa.xyz.testcases.ValidAddCustomerTestCase"/>
+      <class name="com.qa.xyz.testcases.CustomersPageTestCase"/>
+      <class name="com.qa.xyz.testcases.HomePageTestCase"/>
+      <class name="com.qa.xyz.testcases.ValidOpenAccTestCase"/>
+      <class name="com.qa.xyz.testcases.CustomerLoginTestCase"/>
+      <class name="com.qa.xyz.testcases.TransactionTestCase"/>
+      <class name="com.qa.xyz.testcases.InvalidDepositTestCase"/>
+      <class name="com.qa.xyz.testcases.ValidDepositTestCase"/>
+      <class name="com.qa.xyz.testcases.InvalidAddCustomerTestCase"/>
+      <class name="com.qa.xyz.testcases.InvalidWithdrawalTestCase"/>
+      <class name="com.qa.xyz.testcases.ValidWithdrawalTestCase"/> 
+    </classes>
+  </test> <!-- XYZ Bank Test -->
+</suite> <!-- XYZ Bank Test Suite -->
